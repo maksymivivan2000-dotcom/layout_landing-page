@@ -1,0 +1,77 @@
+.recommended {
+  @include container;
+
+  &__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #292929;
+
+    font-size: 32px;
+    line-height: 32px;
+    margin: 64px 0 48px;
+    text-align: center;
+
+    @include on-tablet {
+      font-size: 40px;
+      line-height: 40px;
+      margin: 120px 0 56px;
+    }
+
+    @include on-desktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+
+.person {
+  @include container;
+
+  display: grid;
+  gap: 40px 24px;
+
+  @include on-tablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.person4,
+.person5,
+.person6 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  &__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+  &__op {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+  &__coste {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+}

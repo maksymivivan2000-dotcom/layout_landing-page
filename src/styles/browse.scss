@@ -1,0 +1,109 @@
+.browse__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @include on-tablet {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.categoryPhoto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.oneLine,
+.twoLine,
+.thereLine {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: span 2;
+
+  @include on-tablet {
+    grid-column: span 2;
+  }
+
+  @include on-desktop {
+    grid-column: span 4;
+  }
+}
+
+.browse__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 128px;
+}
+
+.imageGtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.buttonPage {
+  width: 280px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 8px;
+  padding-right: 48px;
+  padding-left: 48px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  background-color: #292929;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 96px;
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 745px) {
+  .buttonPage {
+    width: 600px;
+    margin-bottom: 120;
+  }
+}
+
+@media (min-width: 1261px) {
+  .buttonPage {
+    width: 354px;
+    margin-bottom: 120;
+  }
+}
+
+.buttonText {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.buttonPage:hover {
+  background-color: #f8f8fa;
+  color: #292929;
+  border: 2px solid #f0f1f4;
+}
+
+.buttonPage:active {
+  background-color: #111;
+  color: #fff;
+}
