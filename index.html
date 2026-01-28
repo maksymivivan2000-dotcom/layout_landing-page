@@ -1,22 +1,178 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link
-      rel="stylesheet"
-      href="src/styles/main.scss"
-    />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
+    <link rel="stylesheet" href="src/styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="src/scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <div class="hero">
+  <header class="header">
+    <a href="#" class="logo" aria-label="Головна сторінка">
+      <img
+        class="logo__image"
+        src="src/image/Logo (1).png"
+        alt="Логотип компанії"
+      />
+    </a>
+
+<div class="header__actions">
+    <img
+      src="src/image/Phone-number.png"
+      alt=""
+      class="header__icon"
+    />
+  </a>
+
+  <button
+    class="header__button header__button--menu"
+    aria-label="Відкрити меню"
+    type="button"
+    id="menuButton"
+  >
+    <img
+      src="src/image/Icon-Burger-menu.png"
+      alt=""
+      class="header__icon"
+    />
+  </button>
+</div>
+  </header>
+
+  <h1 class="hero__title">
+    Bring joy back to the everyday
+  </h1>
+</div>
+
+<!-- Меню -->
+<aside class="page_menu" id="menu">
+  <div class="menu_content">
+    <div class="menu_top">
+      <a href="#" class="logoMenu">
+        <img src="src/image/Logo (1).png" alt="Bose logo">
+      </a>
+      <button class="icon icon-close" id="closeButton" aria-label="Закрити меню">
+        ✕
+      </button>
+    </div>
+
+    <nav class="menu_nav">
+      <a href="#" class="menu_link">Products</a>
+      <a href="#" class="menu_link">Store</a>
+      <a href="#" class="menu_link">Login</a>
+      <a href="#" class="menu_link">Cart(0)</a>
+      <a class="menuNumber" href="tel:+123455555555">+1 234 5555-55-55</a>
+      <h1 class="menuCall">call to order</h1>
+    </nav>
+  </div>
+</aside>
+
+    <div class="recommended">
+      <h1 class="recommended__title">Recommended</h1>
+      <div class="person">
+
+      <div>
+         <img src="src/image/Image (1).png" alt="" class="person4">
+         <h1 class="card__title">Phone (1)</h1>
+         <h2 class="card__op">Designed with instinct, to bring joy back to the everyday. Through the Glyph Interface, a perfected OS and exceptional dual camera. All startlingly fast.</h2>
+         <h3 class="card__coste">$ 499.00</h3>
+      </div>
+      <div>
+      <img src="src/image/Image (2).png" alt="" class="person5">
+      <h1 class="card__title">Ear (2)</h1>
+         <h2 class="card__op">Perfecting the path from artist to ear. So that music sounds just as it was intended.</h2>
+         <h3 class="card__coste">$ 149.00</h3>
+      </div>
+      <div>
+      <img src="src/image/Image (3).png" alt="" class="person6">
+      <h1 class="card__title">Ear (stick)</h1>
+         <h2 class="card__op">Tech you can’t feel. Leaving just space for sound to come to life. Powered by custom sound technology.</h2>
+         <h3 class="card__coste">$ 119.00</h3>
+      </div>
+      </div>
+    </div>
+
+    <div class="browse">
+  <h1 class="browse__title">Browse Nothing products by category</h1>
+
+  <div class="browse__grid">
+    <div class="oneLine">
+      <img class="categoryPhoto, sub" src="src/image/ImageG1.png" alt="">
+      <img class="categoryPhoto, qub" src="src/image/ImageG2.png" alt="">
+      <h1 class="imageGtitle">All products</h1>
+    </div>
+
+    <div class="twoLine">
+      <img class="categoryPhoto, qub" src="src/image/ImageG3.png" alt="">
+      <img class="categoryPhoto, sub" src="src/image/ImageG4.png" alt="">
+      <h1 class="imageGtitle">Audio</h1>
+    </div>
+
+    <div class="thereLine">
+      <img class="categoryPhoto, sub" src="src/image/ImageG5.png" alt="">
+      <img class="categoryPhoto, qub" src="src/image/ImageG6.png" alt="">
+      <h1 class="imageGtitle">Accessories</h1>
+    </div>
+  </div>
+</div>
+
+<div>
+  <button class="buttonPage">
+    <h1 class="buttonText">View all</h1>
+  </button>
+</div>
+
+<div>
+  <img class="bakcgroudn" src="src/image/back.png" alt="">
+</div>
+
+<div class="About">
+  <h1 class="AboutTitle">About us</h1>
+
+  <h2 class="AboutText">We’re a London-based tech company on a mission to remove barriers between people and technology. <br>
+<br>
+To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
+No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple. <br>
+<br>
+
+Because beautiful tech shouldn’t be complicated.</h2>
+</div>
+
+<div class="contact">
+  <h1 class="contactTItle">Contact us</h1>
+
+  <form class="pole">
+  <label for="name"></label>
+  <input type="text" id="name" name="name" placeholder="Name">
+
+  <label for="email"></label>
+  <input type="email" id="email" name="email" placeholder="Email">
+
+  <label for="message"></label>
+  <textarea id="message" name="message" rows="4" placeholder="Message"></textarea><br><br>
+
+  <button type="submit">Send</button>
+</form>
+</div>
+
+<div class="fonoglava">
+  <h1 class="fone">Phone</h1>
+  <h1 class="glava">+1 234 5555-55-55</h1>
+
+  <h1 class="fone">Email</h1>
+  <h1  class="glava">hello@nothing.com</h1>
+
+  <h1 class="fone">Address</h1>
+  <h1 class="glava">400 first ave. <br> suite 700 <br> Minneapolis, MN 55401</h1>
+</div>
   </body>
 </html>
+
