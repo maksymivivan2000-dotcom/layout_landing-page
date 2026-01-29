@@ -25,11 +25,14 @@
     </a>
 
 <div class="header__actions">
-    <img
-      src="src/image/Phone-number.png"
-      alt=""
-      class="header__icon"
-    />
+<div class="phone">
+  <img
+    src="src/image/Phone-number.png"
+    alt=""
+    class="header__icon"
+  />
+  <a href="tel:+12345555555" class="phone__number">+1 234 555-55-55</a>
+</div>
   </a>
 
   <button
@@ -104,24 +107,22 @@
   <h1 class="browse__title">Browse Nothing products by category</h1>
 
   <div class="browse__grid">
-    <div class="oneLine">
-      <img class="categoryPhoto, sub" src="src/image/ImageG1.png" alt="">
-      <img class="categoryPhoto, qub" src="src/image/ImageG2.png" alt="">
-      <h1 class="imageGtitle">All products</h1>
-    </div>
+    <div class="browse__grid">
+  <!-- Перша група -->
+  <img class="categoryPhoto sub1" src="src/image/ImageG1.png" alt="">
+  <img class="categoryPhoto qub1" src="src/image/ImageG2.png" alt="">
+  <h1 class="imageGtitle title1">All products</h1>
 
-    <div class="twoLine">
-      <img class="categoryPhoto, qub" src="src/image/ImageG3.png" alt="">
-      <img class="categoryPhoto, sub" src="src/image/ImageG4.png" alt="">
-      <h1 class="imageGtitle">Audio</h1>
-    </div>
+  <!-- Друга група -->
+  <img class="categoryPhoto qub2" src="src/image/ImageG3.png" alt="">
+  <img class="categoryPhoto sub2" src="src/image/ImageG4.png" alt="">
+  <h1 class="imageGtitle title2">Audio</h1>
 
-    <div class="thereLine">
-      <img class="categoryPhoto, sub" src="src/image/ImageG5.png" alt="">
-      <img class="categoryPhoto, qub" src="src/image/ImageG6.png" alt="">
-      <h1 class="imageGtitle">Accessories</h1>
-    </div>
-  </div>
+  <!-- Третя група -->
+  <img class="categoryPhoto sub3" src="src/image/ImageG5.png" alt="">
+  <img class="categoryPhoto qub3" src="src/image/ImageG6.png" alt="">
+  <h1 class="imageGtitle title3">Accessories</h1>
+</div>
 </div>
 
 <div>
@@ -149,29 +150,32 @@ Because beautiful tech shouldn’t be complicated.</h2>
 <div class="contact">
   <h1 class="contactTItle">Contact us</h1>
 
-  <form class="pole">
-  <label for="name"></label>
-  <input type="text" id="name" name="name" placeholder="Name">
+  <form class="pole" id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Name">
 
-  <label for="email"></label>
-  <input type="email" id="email" name="email" placeholder="Email">
+    <input type="email" id="email" name="email" placeholder="Email">
 
-  <label for="message"></label>
-  <textarea id="message" name="message" rows="4" placeholder="Message"></textarea><br><br>
+    <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
 
-  <button type="submit">Send</button>
-</form>
+    <p class="form-error" id="formError"></p>
+
+    <button type="submit">Send</button>
+  </form>
 </div>
 
-<div class="fonoglava">
-  <h1 class="fone">Phone</h1>
-  <h1 class="glava">+1 234 5555-55-55</h1>
+<div class="containerr">
+  <div class="fonoglava">
+    <h1 class="fone">Phone</h1>
+    <h1 class="glava">+1 234 5555-55-55</h1>
 
-  <h1 class="fone">Email</h1>
-  <h1  class="glava">hello@nothing.com</h1>
+    <h1 class="fone">Email</h1>
+    <h1 class="glava">hello@nothing.com</h1>
 
-  <h1 class="fone">Address</h1>
-  <h1 class="glava">400 first ave. <br> suite 700 <br> Minneapolis, MN 55401</h1>
+    <h1 class="fone">Address</h1>
+    <h1 class="glava">
+      400 first ave. <br> suite 700 <br> Minneapolis, MN 55401
+    </h1>
+  </div>
 </div>
   </body>
 </html>
