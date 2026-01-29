@@ -75,3 +75,17 @@
     letter-spacing: 0;
   }
 }
+
+.recStyle {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include on-tablet {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  @include on-desktop {
+    padding-right: 800px;
+  }
+}
