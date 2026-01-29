@@ -26,11 +26,11 @@
 
 <div class="header__actions">
 <div class="phone">
-  <img
+  <a href="tel:+12345555555"><img
     src="src/image/Phone-number.png"
     alt=""
     class="header__icon"
-  />
+  /></a>
   <a href="tel:+12345555555" class="phone__number">+1 234 555-55-55</a>
 </div>
   </a>
@@ -79,7 +79,9 @@
 </aside>
 
     <div class="recommended">
+      <div class="recStyle">
       <h1 class="recommended__title">Recommended</h1>
+      </div>
       <div class="person">
 
       <div>
@@ -104,8 +106,9 @@
     </div>
 
     <div class="browse">
+      <div class="bwowTi">
   <h1 class="browse__title">Browse Nothing products by category</h1>
-
+      </div>
   <div class="browse__grid">
     <div class="browse__grid">
   <!-- Перша група -->
@@ -151,13 +154,13 @@ Because beautiful tech shouldn’t be complicated.</h2>
   <h1 class="contactTItle">Contact us</h1>
 
   <form class="pole" id="contactForm">
-    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="text" id="name" name="name" placeholder="Name" required>
 
-    <input type="email" id="email" name="email" placeholder="Email">
+    <input type="email" id="email" name="email" placeholder="Email" required>
 
-    <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
 
-    <p class="form-error" id="formError"></p>
+    <p class="form-error" id="formError" style="color:red;"></p>
 
     <button type="submit">Send</button>
   </form>
@@ -166,15 +169,17 @@ Because beautiful tech shouldn’t be complicated.</h2>
 <div class="containerr">
   <div class="fonoglava">
     <h1 class="fone">Phone</h1>
-    <h1 class="glava">+1 234 5555-55-55</h1>
+    <a class="linkg" href="tel:+123455555555"> <h1 class="glava">+1 234 5555-55-55</h1> </a>
 
     <h1 class="fone">Email</h1>
-    <h1 class="glava">hello@nothing.com</h1>
+    <a class="linkg" href="mailto:hello@nothing.com"><h1 class="glava">hello@nothing.com</h1></a>
 
     <h1 class="fone">Address</h1>
-    <h1 class="glava">
+    <a class="linkg" href="https://maps.google.com/?q=400+First+Ave,+Suite+700,+Minneapolis,+MN+55401">
+      <h1 class="glava">
       400 first ave. <br> suite 700 <br> Minneapolis, MN 55401
     </h1>
+    </a>
   </div>
 </div>
   </body>
