@@ -94,6 +94,13 @@
   }
 }
 
+.containerr {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
 .fone {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
@@ -115,23 +122,24 @@
 }
 
 .fonoglava {
-  width: 280;
-  height: 244;
+  width: 280px;
+  height: 244px;
   padding: 0 20px;
-  top: 100px;
 
   @include on-tablet {
-    grid-column: span 2;
     width: 392px;
     height: 244px;
     padding: 0 72px;
+    grid-column: 1 / 6;
+    margin-top: 0;
   }
 
   @include on-desktop {
-    grid-column: span 6;
     width: 498px;
     height: 244px;
     margin-left: auto;
     padding: 0 120px;
+    grid-column: 6 / 12;
+    margin-top: -300px;
   }
 }

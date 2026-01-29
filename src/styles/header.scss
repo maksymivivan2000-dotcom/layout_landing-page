@@ -127,3 +127,40 @@
     }
   }
 }
+
+.phone {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.phone__number {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-8px);
+
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: none;
+
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.phone:hover .phone__number {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+  pointer-events: auto;
+}

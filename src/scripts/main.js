@@ -31,3 +31,31 @@ if (menuButton && closeButton && menu) {
     }
   });
 }
+
+const form = document.getElementById("contactForm");
+const errorBox = document.getElementById("formError");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+
+  errorBox.textContent = "";
+
+  if (!name || !email || !message) {
+    errorBox.textContent = "All fields are required";
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    errorBox.textContent = "Please enter a valid email";
+    return;
+  }
+
+  form.reset();
+  errorBox.textContent = "Message sent successfully!";
+  errorBox.style.color = "green";
+});
