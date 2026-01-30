@@ -87,10 +87,6 @@
     transition: opacity 0.3s;
     text-decoration: none;
 
-    &:hover {
-      opacity: 0.7;
-    }
-
     &:active {
       opacity: 0.5;
     }
@@ -176,4 +172,23 @@
   .phone:hover .phone__number {
     transform: translateX(50%) translateY(0);
   }
+}
+
+.burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon_hover {
+  position: absolute;
+  opacity: 0;
+}
+
+.burger:hover .icon_burger {
+  opacity: 0;
+}
+
+.burger:hover .icon_hover {
+  opacity: 1;
 }

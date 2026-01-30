@@ -1,7 +1,7 @@
 .browse__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 0;
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
@@ -11,7 +11,7 @@
     grid-template-columns: repeat(6, 1fr);
     width: 600px;
     max-width: 600px;
-    gap: 20px;
+    gap: 0 20px;
     padding: 0;
   }
 
@@ -19,8 +19,18 @@
     grid-template-columns: repeat(12, 1fr);
     width: 1020px;
     max-width: 1020px;
-    gap: 30px;
+    gap: 0 24px;
     padding: 0;
+  }
+}
+
+.browse__category {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
   }
 }
 
@@ -38,41 +48,55 @@
   font-size: 24px;
   line-height: 1.4;
   letter-spacing: 0;
-  margin-top: 8px;
   text-align: left;
-  margin-bottom: 40px;
+  margin: 8px 0 40px;
 
   @media (min-width: 745px) {
-    margin-bottom: 56px;
+    margin: 8px 0 56px;
+  }
+
+  @media (min-width: 1261px) {
+    margin: 8px 0 56px;
+  }
+}
+
+.button-container {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 745px) and (max-width: 1260px) {
+    max-width: 600px;
+  }
+
+  @media (min-width: 1261px) {
+    max-width: 1020px;
+    padding-left: 0;
   }
 }
 
 .buttonPage {
   width: 280px;
   height: 56px;
-  opacity: 1;
   border-radius: 8px;
-  padding-right: 48px;
-  padding-left: 48px;
   box-sizing: border-box;
   border: none;
   cursor: pointer;
   background-color: #292929;
   color: #fff;
   display: block;
-  margin: 0 auto;
-  margin-top: 56px;
-  margin-bottom: 96px;
+  padding: 0;
   transition: background-color 0.3s ease;
+  margin: 56px auto 96px;
 
-  @media (min-width: 745px) {
+  @media (min-width: 745px) and (max-width: 1260px) {
     width: 600px;
-    margin-bottom: 120px;
+    margin: 56px auto 120px;
   }
 
   @media (min-width: 1261px) {
     width: 354px;
-    margin-bottom: 120px;
+    margin: 56px 0 120px;
   }
 }
 
@@ -83,6 +107,7 @@
   font-size: 16px;
   line-height: 27px;
   text-align: center;
+  display: block;
 }
 
 .buttonPage:hover {
@@ -94,25 +119,6 @@
 .buttonPage:active {
   background-color: #111;
   color: #fff;
-}
-
-@media (min-width: 745px) and (max-width: 1260px) {
-  .buttonPage {
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto; /* центр */
-  }
-}
-
-@media (min-width: 1261px) {
-  .buttonPage {
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 240px; /* ПК — відступ зліва */
-  }
 }
 
 .sub1 {
@@ -213,6 +219,7 @@
 
 .title3 {
   grid-column: 1 / -1;
+  margin-bottom: 0;
 
   @media (min-width: 745px) and (max-width: 1260px) {
     grid-column: 1 / 7;
@@ -226,7 +233,7 @@
 .bwowTi {
   width: 100%;
   max-width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 
   @media (min-width: 745px) and (max-width: 1260px) {
     max-width: 600px;
@@ -240,22 +247,22 @@
 .browse__title {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 48px;
   text-align: center;
-  margin-top: 128px;
-  margin-bottom: 48px;
-  padding: 0 20px;
+  margin: 0;
+  padding: 64px 0 0;
+  font-size: 32px;
+  line-height: 1.2;
 
   @media (min-width: 745px) and (max-width: 1260px) {
+    font-size: 40px;
     text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 120px;
   }
 
   @media (min-width: 1261px) {
+    font-size: 48px;
+    line-height: 48px;
     text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 128px;
   }
 }

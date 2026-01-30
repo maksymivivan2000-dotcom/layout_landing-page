@@ -40,11 +40,10 @@
     type="button"
     id="menuButton"
   >
-    <img
-      src="src/image/Icon-Burger-menu.png"
-      alt=""
-      class="header__icon"
-    />
+  <div class="burger">
+  <img src="src/image/Icon-Burger-menu.png" class="header__icon icon_burger">
+  <img src="src/image/Icon-Burger-menu-hover.png" class="header__icon icon_hover">
+</div>
   </button>
 </div>
   </header>
@@ -105,31 +104,43 @@
     </div>
 
     <div class="browse">
-      <div class="bwowTi">
-  <h1 class="browse__title">Browse Nothing products by category</h1>
-      </div>
+  <div class="bwowTi">
+    <h1 class="browse__title">Browse Nothing <br> products by category</h1>
+  </div>
+
   <div class="browse__grid">
-    <div class="browse__grid">
-  <!-- Перша група -->
-  <img class="categoryPhoto sub1" src="src/image/ImageG1.png" alt="">
-  <img class="categoryPhoto qub1" src="src/image/ImageG2.png" alt="">
-  <h1 class="imageGtitle title1">All products</h1>
+    <!-- Перша група -->
+    <div class="browse__category sub1">
+      <img class="categoryPhoto" src="src/image/ImageG1.png" alt="All products">
+    </div>
+    <div class="browse__category qub1">
+      <img class="categoryPhoto" src="src/image/ImageG2.png" alt="All products">
+    </div>
+    <h2 class="imageGtitle title1">All products</h2>
 
-  <!-- Друга група -->
-  <img class="categoryPhoto qub2" src="src/image/ImageG3.png" alt="">
-  <img class="categoryPhoto sub2" src="src/image/ImageG4.png" alt="">
-  <h1 class="imageGtitle title2">Audio</h1>
+    <!-- Друга група -->
+    <div class="browse__category qub2">
+      <img class="categoryPhoto" src="src/image/ImageG3.png" alt="Audio">
+    </div>
+    <div class="browse__category sub2">
+      <img class="categoryPhoto" src="src/image/ImageG4.png" alt="Audio">
+    </div>
+    <h2 class="imageGtitle title2">Audio</h2>
 
-  <!-- Третя група -->
-  <img class="categoryPhoto sub3" src="src/image/ImageG5.png" alt="">
-  <img class="categoryPhoto qub3" src="src/image/ImageG6.png" alt="">
-  <h1 class="imageGtitle title3">Accessories</h1>
+    <!-- Третя група -->
+    <div class="browse__category sub3">
+      <img class="categoryPhoto" src="src/image/ImageG5.png" alt="Accessories">
+    </div>
+    <div class="browse__category qub3">
+      <img class="categoryPhoto" src="src/image/ImageG6.png" alt="Accessories">
+    </div>
+    <h2 class="imageGtitle title3">Accessories</h2>
+  </div>
 </div>
-</div>
 
-<div>
+<div class="button-container">
   <button class="buttonPage">
-    <h1 class="buttonText">View all</h1>
+    <span class="buttonText">View all</span>
   </button>
 </div>
 

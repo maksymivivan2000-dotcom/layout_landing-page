@@ -41,14 +41,28 @@
   resize: none;
 }
 
-.pole input:focus,
-.pole textarea:focus {
-  border: 1px solid #292929;
+.pole input:autofill {
+  background-color: transparent !important;
 }
 
 .pole input:hover,
 .pole textarea:hover {
   border: 1px solid #d5d7de;
+}
+
+.pole input:focus,
+.pole textarea:focus {
+  border: 1px solid #292929;
+  outline: none;
+}
+
+.pole input:-webkit-autofill,
+.pole input:-webkit-autofill:hover,
+.pole input:-webkit-autofill:focus,
+.pole input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #292929 !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .pole button {
@@ -61,20 +75,24 @@
   line-height: 27px;
   letter-spacing: 0;
   text-align: center;
-  border-radius: 2px;
-  border-color: #f0f1f4;
+  border-radius: 8px;
+  border: 2px solid #292929;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .pole button:hover {
   background-color: #f8f8fa;
   color: #292929;
+  border: 2px solid #f0f1f4;
 }
 
 .pole button:active {
   background-color: #111;
   color: #fff;
+  border: 2px solid #111;
 }
 
 @media (max-width: 744px) {
