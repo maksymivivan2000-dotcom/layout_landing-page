@@ -2,14 +2,12 @@ const menuButton = document.getElementById('menuButton');
 const closeButton = document.getElementById('closeButton');
 const menu = document.getElementById('menu');
 
-
 if (menuButton && closeButton && menu) {
 
   menuButton.addEventListener('click', () => {
     menu.classList.add('is-open');
     document.body.style.overflow = 'hidden';
   });
-
 
   closeButton.addEventListener('click', () => {
     menu.classList.remove('is-open');
@@ -35,27 +33,29 @@ if (menuButton && closeButton && menu) {
 const form = document.getElementById("contactForm");
 const errorBox = document.getElementById("formError");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+if (form && errorBox) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
 
-  errorBox.textContent = "";
+    errorBox.textContent = "";
 
-  if (!name || !email || !message) {
-    errorBox.textContent = "All fields are required";
-    return;
-  }
+    if (!name || !email || !message) {
+      errorBox.textContent = "All fields are required";
+      return;
+    }
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    errorBox.textContent = "Please enter a valid email";
-    return;
-  }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      errorBox.textContent = "Please enter a valid email";
+      return;
+    }
 
-  form.reset();
-  errorBox.textContent = "Message sent successfully!";
-  errorBox.style.color = "green";
-});
+    form.reset();
+    errorBox.textContent = "Message sent successfully!";
+    errorBox.style.color = "green";
+  });
+}

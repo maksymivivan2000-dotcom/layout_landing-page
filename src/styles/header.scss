@@ -164,3 +164,16 @@
   transform: translateY(-50%) translateX(0);
   pointer-events: auto;
 }
+
+@media (max-width: 768px) {
+  .phone__number {
+    right: 50%;
+    top: 100%;
+    transform: translateX(50%) translateY(8px);
+    text-align: center;
+  }
+
+  .phone:hover .phone__number {
+    transform: translateX(50%) translateY(0);
+  }
+}
