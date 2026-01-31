@@ -143,6 +143,10 @@
     margin-top: -350px;
     margin-right: 300px;
   }
+
+  @media (min-width: 1260px) and (max-width: 1410px) {
+    margin-right: 200px;
+  }
 }
 
 .linkg {
